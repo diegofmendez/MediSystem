@@ -21,6 +21,10 @@ public class Entrada implements SubGrupo{
     public String getTitulo() {
         return nombre;
     }
+    @Override
+    public void setTitulo(String titulo) {
+        this.nombre = titulo;
+    }
 
     public int getId() {
         return id;

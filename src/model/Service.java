@@ -44,7 +44,6 @@ public class Service {
                     imprimirArrayList(libros);
                     System.out.println("Elija el libro que desea");
                     libroSeleccionado = elegirDeArrayList(libros, scanner);
-                    
                     break;
                 case 2://Mostrar el libro
                     System.out.println(libroSeleccionado.getTitulo());
@@ -55,6 +54,15 @@ public class Service {
                     Libro libro = new Libro(etiqueta);
                     libros.add(libro);
                     break;
+                case 4: //Borrar
+                    imprimirArrayList(libros);
+                    System.out.println("Borre uno de estos libros");
+                    libros.remove(elegirDeArrayList(libros, scanner));
+                    break;
+                case 5://editar un libro
+                    imprimirArrayList(libros);
+                    System.out.println("Edite el nombre de alguno de estos libros");
+                    
                 default:
                     System.out.println("Salir");
                     check = false;

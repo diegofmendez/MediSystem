@@ -21,6 +21,10 @@ public class Hoja implements SubGrupo{
     public String getTitulo() {
         return etiqueta;
     }
+    @Override
+    public void setTitulo(String titulo) {
+        this.etiqueta = titulo;
+    }
     
     
     public String getEtiqueta() {

@@ -23,6 +23,10 @@ public class Libro implements SubGrupo{
     public String getTitulo() {
         return etiqueta;
     }
+    @Override
+    public void setTitulo(String titulo) {
+        this.etiqueta = titulo;
+    }
     
     public String getEtiqueta() {
         return etiqueta;
