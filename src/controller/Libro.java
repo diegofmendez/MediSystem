@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package controller;
 
 import java.util.ArrayList;
@@ -11,27 +7,38 @@ import java.util.List;
  *
  * @author dfmen
  */
-public class Libro {
-    private String mes;
+public class Libro implements SubGrupo{
+    private String etiqueta;
 
-
+    ArrayList<Hoja> hojas = new ArrayList<Hoja>();
     
     public Libro() {
+    }    
+
+    public Libro(String etiqueta) {
+        this.etiqueta = etiqueta;
     }
     
-    public void anadirHoja(){
-        System.out.println("Hola");
-        
-    }
-
-    public String getMes() {
-        return mes;
-    }
-
-    public void setMes(String mes) {
-        this.mes = mes;
+    @Override
+    public String getTitulo() {
+        return etiqueta;
     }
     
+    public String getEtiqueta() {
+        return etiqueta;
+    }
+
+    public void setEtiqueta(String etiqueta) {
+        this.etiqueta = etiqueta;
+    }
+
+    public ArrayList<Hoja> getHojas() {
+        return hojas;
+    }
+
+    public void setHojas(ArrayList<Hoja> hojas) {
+        this.hojas = hojas;
+    }
     
     
 }

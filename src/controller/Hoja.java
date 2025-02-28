@@ -4,23 +4,31 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Hoja{
-    private String dia;
+public class Hoja implements SubGrupo{
+    private String etiqueta;
     
     ArrayList<Entrada> entradas = new ArrayList<Entrada>();
     
     public Hoja() {
     }
-    public void appendEntrada(Entrada entrada){
-        entradas.add(entrada);
+
+    public Hoja(String etiqueta) {
+        this.etiqueta = etiqueta;
     }
 
-    public String getDia() {
-        return dia;
+    
+    @Override
+    public String getTitulo() {
+        return etiqueta;
+    }
+    
+    
+    public String getEtiqueta() {
+        return etiqueta;
     }
 
-    public void setDia(String dia) {
-        this.dia = dia;
+    public void setEtiqueta(String etiqueta) {
+        this.etiqueta = etiqueta;
     }
 
     public ArrayList<Entrada> getEntradas() {
