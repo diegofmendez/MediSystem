@@ -24,32 +24,10 @@ public class Mysql_prueba2 {
             if (con!=null){
                 System.out.println("Conexion establecida");
             }
-        }
-        // Si la conexion NO fue exitosa mostramos un mensaje de error
-        catch (ClassNotFoundException | SQLException e){
+        }catch (ClassNotFoundException | SQLException e){
             System.out.println("Error de conexion" + e);
         }
         
-        
-        // Se procede a realizar las operaciones correspondientes para la insercción de datos
-        
-        //Inserccion insertar = new Inserccion();
-        //insertar.guardar(con, Nombre, Cedula,Correo);
-        
-        //Inserccion insertar = new Inserccion();
-        //insertar.guardar(con);
-        
-        //insertar.recuperarPorId(con, 1);
-        
-        /* 
-    
-        Debido a las posibles excepciones el código de ingreso se 
-        debe poner en un TRY, de esta forma con el objeto 
-        Connection, logramos establecer la conexión entre la 
-        BD creada y NetBeans
-
-    */    
-
     }
     public static void cerrarConexion() {
         try {
@@ -57,7 +35,7 @@ public class Mysql_prueba2 {
                 con.close();
                 System.out.println("Conexión cerrada");
             }
-        } catch (SQLException e) {
+        }catch (SQLException e) {
             System.out.println("Error al cerrar la conexión: " + e.getMessage());
         }
     }
@@ -74,10 +52,4 @@ public class Mysql_prueba2 {
             return true;
         }  
     }
-    
-    
-
-
 }
-    
-
