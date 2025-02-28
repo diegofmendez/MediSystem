@@ -4,10 +4,34 @@
  */
 package controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author dfmen
  */
 public class Libro {
+    private String mes;
+
+
+    
+    public Libro() {
+    }
+    
+    public void anadirHoja(){
+        System.out.println("Hola");
+        
+    }
+
+    public String getMes() {
+        return mes;
+    }
+
+    public void setMes(String mes) {
+        this.mes = mes;
+    }
+    
+    
     
 }

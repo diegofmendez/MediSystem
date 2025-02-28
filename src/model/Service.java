@@ -7,27 +7,19 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 import view.*;
-
-/**
- *
- * @author dfmen
- */
+import controller.*;
+import java.util.Scanner;
 public class Service {
     public static void main(String[] args) {
-        
-        new Login().setVisible(true);
+        //new Login().setVisible(true);
         //new Spreadsheet().setVisible(true);
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        Scanner s = new Scanner(System.in);
+
+        Libro libro = new Libro();
+        Hoja hoja = new Hoja();
+        Entrada entrada = new Entrada(0, 0, 0, "fechaingreso", "Diego", 20, "fallecimiento", false, "T", "Fungi", "dormido hasta la venida del señor");
+        hoja.appendEntrada(entrada);
+    
     }
-    
-    
 }
